@@ -1,0 +1,161 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,400i,700';
+html, body {
+    font-family: 'Lato', sans-serif;
+}
+
+.index span {
+    margin-left: 4px;
+    padding: 1px 8px;
+}
+
+.input-field .prefix {
+    color: #0097a7;
+}
+
+nav .input-field label.active i {
+    color: black;
+}
+
+nav .input-field {
+    color: black;
+}
+
+.input-field .prefix.active {
+    color: #00c853;
+}
+
+.card.p-small {
+    height: 170px;
+}
+
+.card-header {
+    padding: 10px;
+    font-size: 1.3rem;
+    border-radius: 0 0 2px 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    min-height: 70px;
+    max-height: 70px;
+    box-sizing: border-box;
+}
+
+.card-header-medium {
+    padding: 20px;
+    overflow: hidden;
+    width: 100%;
+    min-height: 150px;
+    max-height: 150px;
+    box-sizing: inherit;
+}
+
+.card-footer {
+    padding: 20px;
+    overflow: hidden;
+    width: 100%;
+    min-height: 70px;
+    max-height: 70px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.valign {
+    vertical-align: middle;
+}
+
+.side-nav a {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.side-nav li > a > i.material-icons {
+    color: #fff;
+}
+
+
+/** FIXES for error messages https://github.com/Dogfalo/materialize/issues/1562*/
+
+label {
+    width: 100%;
+}
+
+label:after {
+    -moz-transition-property: all !important;
+    -o-transition-property: all !important;
+    -webkit-transition-property: all !important;
+    transition-property: all !important;
+    font-size: 0.8rem;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    -webkit-transform: none;
+    transform: none;
+}
+
+label:not(.active):after {
+    -moz-transform: translateY(-140%);
+    -ms-transform: translateY(-140%);
+    -o-transform: translateY(-140%);
+    -webkit-transform: translateY(-140%);
+    transform: translateY(-140%);
+}
+
+.input-field div.invalid{
+  position: relative;
+  top: -1rem;
+  left: 0rem;
+  font-size: 0.8rem;
+  color:#F44336;
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+
+/*.input-field label.active{
+    width:100%;
+}*/
+
+#toast-container {
+    margin-top: 40px;
+}
+
+#toast-container > div {
+    opacity: 1;
+}
+
+#toast-container.toast-top-center > div {
+    width: 60%;
+}
+
+.toast-success {
+    background-color: #4caf50;
+}
+
+.toast-error {
+    background-color: #f44336;
+}
+
+.toast-info {
+    background-color: #2196f3;
+}
+
+.toast-warning {
+    background-color: #ff9800;
+}
+
+.material-tooltip {
+    padding: 4px 4px;
+    font-size: .9rem;
+    border-radius: 2px;
+    color: #fff;
+    min-height: 20px;
+    line-height: 120%;
+    opacity: 0;
+    display: none;
+    position: absolute;
+    text-align: center;
+}
