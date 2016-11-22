@@ -38,7 +38,11 @@ class ReportsController extends Controller
      */
     public function show($id)
     {
-        $report = $this->report->find($id);
+        return $report = $this->report->find($id);
+
+        if ($report->patient_id !== auth()->user()->id) {
+            return 'u are not allowed';
+        }
 
         return view('operator.reports.show', compact('report'));
     }
